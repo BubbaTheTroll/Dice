@@ -15,6 +15,10 @@ void draw()
 	Bob.show();
 	Bubba.roll();
 	Bubba.show();
+	textSize(30);
+	int sum = Bob.myNum + Bubba.myNum;
+	text("Sum:" + sum, 190,250);
+
 }
 void mousePressed()
 {
@@ -69,6 +73,7 @@ class Die //models one single dice cube
 		}
 		textSize(15);
 		text(myNum, myX, myY);
+
 		//your code here
 	}
 }
